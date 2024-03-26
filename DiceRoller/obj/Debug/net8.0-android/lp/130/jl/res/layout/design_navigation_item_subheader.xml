@@ -1,0 +1,21 @@
+6ad364e35" versionScope="nonSxS" />
+      </package>
+    </update>
+    <update description="WinPE-HTA-Package-windows" displayName="WinPE-HTA-Package-windows" name="WinPE-HTA-Package-windows">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="WinPE-HTA-Package-windows" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="WinPE-HTA-Package-windows" version="10.0.22621.1" processorArchitecture="amd64" language="pt-BR" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </package>
+    </update>
+    <update description="WinPE-HTA-Package-onecoreuapwindows" displayName="WinPE-HTA-Package-onecoreuapwindows" name="WinPE-HTA-Package-onecoreuapwindows">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="WinPE-HTA-Package-onecoreuapwindows" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="WinPE-HTA-Package-onecoreuapwindows" version="10.0.22621.1" processorArchitecture=

@@ -1,0 +1,21 @@
+         selectors: (_e = {},
+                    _e['&:hover, &:active, &:focus'] = {
+                        backgroundColor: semanticColors.bodyBackground,
+                        padding: DIVIDING_PADDING,
+                        border: calculatedBorderWidth + "px solid " + buttonBorderHovered,
+                    },
+                    _e['&:focus'] = {
+                        borderColor: semanticColors.bodyBackground,
+                        padding: 0,
+                        selectors: {
+                            ':hover': {
+                                borderColor: theme.palette.neutralLight,
+                                padding: DIVIDING_PADDING,
+                            },
+                        },
+                    },
+                    _e),
+            },
+            disabled && {
+                color: semanticColors.disabledBodyText,
+                po

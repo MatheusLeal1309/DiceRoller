@@ -1,0 +1,30 @@
+ia transpiled closure of _onKeyDown
+            originalFocusedElement.current = undefined;
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps -- should only run on first render
+    }, []);
+    react_hooks_1.useOnEvent(root, 'focus', React.useCallback(function () {
+        containsFocus.current = true;
+    }, []), true);
+    react_hooks_1.useOnEvent(root, 'blur', React.useCallback(function (ev) {
+        /** The popup should update this._containsFocus when:
+         * relatedTarget exists AND
+         * the relatedTarget is not contained within the popup.
+         * If the relatedTarget is within the popup, that means the popup still has focus
+         * and focused moved from one element to another within the popup.
+         * If relatedTarget is undefined or null that usually means that a
+         * keyboard event occurred and focus didn't change
+         */
+        if (root.current && ev.relatedTarget && !root.current.contains(ev.relatedTarget)) {
+            containsFocus.current = false;
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps -- should only run on first render
+    }, []), true);
+}
+/**
+ * This adds accessibility to Dialog and Panel controls
+ */
+exports.Popup = React.forwardRef(function (props, forwardedRef) {
+    // Default props
+    // eslint-disable-next-line deprecation/deprecation
+    props = tslib_1.__assign({ shouldRestoreFocus: true

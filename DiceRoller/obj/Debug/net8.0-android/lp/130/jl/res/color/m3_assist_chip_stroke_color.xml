@@ -1,0 +1,43 @@
+eft to vertically align with the waffle in product
+                    padding: '1px 0 1px 8px',
+                },
+            ],
+            underlined &&
+                disabled && {
+                backgroundColor: 'transparent',
+            },
+            hasInput && 'can-clear',
+            className,
+        ],
+        iconContainer: [
+            classNames.iconContainer,
+            {
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                flexShrink: 0,
+                fontSize: 16,
+                width: 32,
+                textAlign: 'center',
+                color: semanticColors.inputIcon,
+                cursor: 'text',
+            },
+            hasFocus && {
+                width: 4,
+            },
+            disabled && {
+                color: semanticColors.inputIconDisabled,
+            },
+            !disableAnimation && {
+                transition: "width " + Styling_1.AnimationVariables.durationValue1,
+            },
+        ],
+        icon: [
+            classNames.icon,
+            {
+                opacity: 1,
+            },
+            hasFocus && {
+                opacity: 0,
+            },
+            !disable

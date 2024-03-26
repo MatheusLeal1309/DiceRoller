@@ -1,0 +1,30 @@
+, skipViewportMeasures = _a.skipViewportMeasures, disableResizeObserver = _a.disableResizeObserver;
+            var win = getWindow(this._root.current);
+            if (skipViewportMeasures !== previousSkipViewportMeasures) {
+                if (!skipViewportMeasures) {
+                    if (!disableResizeObserver && this._isResizeObserverAvailable()) {
+                        if (!this._viewportResizeObserver) {
+                            this._registerResizeObserver();
+                        }
+                    }
+                    else {
+                        this._events.on(win, 'resize', this._onAsyncResize);
+                    }
+                    this._updateViewport();
+                }
+                else {
+                    this._unregisterResizeObserver();
+                    this._events.off(win, 'resize', this._onAsyncResize);
+                }
+            }
+        };
+        WithViewportComponent.prototype.componentWillUnmount = function () {
+            this._events.dispose();
+            this._async.dispose();
+            this._unregisterResizeObserver();
+        };
+        WithViewportComponent.prototype.render = function () {
+            var viewport = this.state.viewport;
+            var newViewport = viewport.width > 0 && viewport.height > 0 ? viewport : undefined;
+            return (React.createElement("div", { className: "ms-Viewport", ref: this._root, style: { minWidth: 1, minHeight: 1 } },
+  

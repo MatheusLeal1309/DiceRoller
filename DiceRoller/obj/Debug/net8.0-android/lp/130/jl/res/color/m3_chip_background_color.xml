@@ -1,0 +1,33 @@
+,
+                height: 'auto',
+                width: 32,
+                selectors: (_e = {
+                        ':hover, :active': {
+                            background: palette.neutralTertiaryAlt,
+                            color: palette.neutralDark,
+                        }
+                    },
+                    _e[Styling_1.HighContrastSelector] = {
+                        color: 'WindowText',
+                    },
+                    _e),
+            },
+            suggested && (_f = {},
+                _f["." + Utilities_1.IsFocusVisibleClassName + " &"] = {
+                    selectors: {
+                        ':hover, :active': {
+                            background: palette.neutralTertiary,
+                        },
+                    },
+                },
+                _f.selectors = {
+                    ':hover, :active': {
+                        background: palette.neutralTertiary,
+                        color: palette.neutralPrimary,
+                    },
+                },
+                _f),
+        ],
+    };
+}
+exports.getStyles 

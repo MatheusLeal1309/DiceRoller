@@ -1,0 +1,32 @@
+ole ? role : 'switch', type: 'button' }),
+        thumb: {
+            className: classNames.thumb,
+        },
+        stateText: {
+            children: stateText,
+            className: classNames.text,
+            htmlFor: id,
+            id: stateTextId,
+        },
+    };
+    return (React.createElement(RootType, __assign({ ref: forwardedRef }, slotProps.root),
+        label && React.createElement(Label, __assign({}, slotProps.label)),
+        React.createElement("div", __assign({}, slotProps.container),
+            React.createElement("button", __assign({}, slotProps.pill),
+                React.createElement("span", __assign({}, slotProps.thumb))),
+            ((checked && onText) || offText) && React.createElement(Label, __assign({}, slotProps.stateText)))));
+});
+ToggleBase.displayName = COMPONENT_NAME + 'Base';
+var useComponentRef = function (props, isChecked, toggleButtonRef) {
+    React.useImperativeHandle(props.componentRef, function () { return ({
+        get checked() {
+            return !!isChecked;
+        },
+        focus: function () {
+            if (toggleButtonRef.current) {
+                toggleButtonRef.current.focus();
+            }
+        },
+    }); }, [isChecked, toggleButtonRef]);
+};
+//# sourceMappingURL=Toggle.base.js.m

@@ -1,0 +1,22 @@
+ar _a;
+        setHasFocus(false);
+        (_a = customOnBlur) === null || _a === void 0 ? void 0 : _a(ev);
+    }, [customOnBlur]);
+    var onInputChange = function (ev) {
+        setValue(ev.target.value);
+    };
+    var onKeyDown = function (ev) {
+        var _a, _b;
+        // eslint-disable-next-line deprecation/deprecation
+        switch (ev.which) {
+            case Utilities_1.KeyCodes.escape:
+                (_a = customOnEscape) === null || _a === void 0 ? void 0 : _a(ev);
+                // Only call onClear if the search box has a value to clear. Otherwise, allow the Esc key
+                // to propagate from the empty search box to a parent element such as a dialog, etc.
+                if (value && !ev.defaultPrevented) {
+                    onClear(ev);
+                }
+                break;
+            case Utilities_1.KeyCodes.enter:
+                if (customOnSearch) {
+                    customO

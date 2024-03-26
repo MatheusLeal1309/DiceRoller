@@ -1,0 +1,24 @@
+hitecture="amd64" language="zh-CN" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="d9b10b101bcc6f65b83e61ea3e454251">
+      <component>
+        <assemblyIdentity name="tpm.inf-LanguagePack" version="10.0.22621.1" processorArchitecture="amd64" language="zh-CN" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="78dd90c948972e20129e34ff639d8695">
+      <component>
+        <assemblyIdentity name="umpass.inf-LanguagePack" version="10.0.22621.1" processorArchitecture="amd64" language="zh-CN" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="134b7544be1d0ffc451a6b050af7fc1d">
+      <component>
+        <assemblyIdentity name="usb.inf-LanguagePack" version="10.0.22621.1" processorArchitecture="amd64" language="zh-CN" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="0259fc3c21b094b7d7d9cb4257e50c39">
+      <component>
+        <assemblyIdentity name="Usb4DeviceRouter.inf-LanguagePack" version="10.0.22621.2506" processorArchitecture="amd64" language="zh-CN" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="c7e6adcb2b15d25fa93

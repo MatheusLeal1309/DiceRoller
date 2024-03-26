@@ -1,0 +1,17 @@
+aryButtonProps, { className: classNames.secondaryButton })),
+                primaryButtonProps && React.createElement(PrimaryButton, __assign({}, primaryButtonProps, { className: classNames.primaryButton })))));
+    }
+    if (hasCloseButton) {
+        closeButton = (React.createElement(IconButton, { className: classNames.closeButton, iconProps: { iconName: 'Cancel' }, title: closeButtonAriaLabel, ariaLabel: closeButtonAriaLabel, onClick: onDismiss }));
+    }
+    useComponentRef(props.componentRef, rootElementRef);
+    return (React.createElement("div", { className: classNames.content, ref: mergedRootRef, role: 'dialog', tabIndex: -1, "aria-labelledby": ariaLabelledBy, "aria-describedby": ariaDescribedBy, "data-is-focusable": true },
+        imageContent,
+        React.createElement(FocusTrapZone, __assign({ isClickableOutsideFocusTrap: true }, focusTrapZoneProps),
+            React.createElement("div", { className: classNames.bodyContent },
+                headerContent,
+                bodyContent,
+                footerContent,
+                closeButton))));
+});
+//# sourceMappingURL=TeachingBubbleContent.base.js.m

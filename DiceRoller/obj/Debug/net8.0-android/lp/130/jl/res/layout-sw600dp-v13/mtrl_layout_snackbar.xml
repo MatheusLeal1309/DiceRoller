@@ -1,0 +1,13 @@
+。">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-msmq-multicast-Opt-Package" version="10.0.22621.1" processorArchitecture="amd64" language="zh-CN" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="MSMQ-Runtime" displayName="MSMQ 运行时组件" description="MSMQ 运行时组件">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-msmq-runtime-Opt-Package" version="10.0.22621.2506" processorArchitecture="amd64" language="zh-CN" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="MSMQ-Triggers" displayName="MSMQ 触发器" description="消息队列触发器允许调用 COM 组件或可执行文件，具体取决于为给定队列中的传入消息定义的筛选器。">
+      <package contained="false" integrate="hidden">
+        <assembly

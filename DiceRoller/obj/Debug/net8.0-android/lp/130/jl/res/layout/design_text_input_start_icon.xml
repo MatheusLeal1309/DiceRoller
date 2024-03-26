@@ -1,0 +1,21 @@
+r-TR" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="5f21cc9feb8bc211e7075d7b683a7a6a">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-OneCore-Wer-Package" version="10.0.22621.1" processorArchitecture="amd64" language="tr-TR" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="4bdef76f3493983be25abad06826c40d">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-BuildFlighting-Package" version="10.0.22621.1" processorArchitecture="amd64" language="tr-TR" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="e29ddb5ebb11eae7e28c6890cf19faaf">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-CoreSystem-UnifiedBPM-Package" version="10.0.22621.1" processorArchitecture="amd64" language="tr-TR" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="d62a52fe1f8e34116866fb558c38609a">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Foundation-Group-Package" version="10.0.22621.2506" 

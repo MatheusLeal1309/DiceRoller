@@ -1,0 +1,21 @@
+tity name="Microsoft-OneCore-Wer-Core-Package" version="10.0.22621.1" processorArchitecture="amd64" language="en-GB" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </package>
+    </update>
+    <update description="WinPE-MDAC-Package-inetcore" displayName="WinPE-MDAC-Package-inetcore" name="WinPE-MDAC-Package-inetcore">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="WinPE-MDAC-Package-inetcore" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="WinPE-MDAC-Package-inetcore" version="10.0.22621.1" processorArchitecture="amd64" language="en-GB" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </package>
+    </update>
+    <update description="WinPE-MDAC-Package-inetsrv" displayName="WinPE-MDAC-Package-inetsrv" name="WinPE-MDAC-Package-inetsrv">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="WinPE-MDAC-Package-inetsrv" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="WinPE-MDAC-Package-inetsrv" version="10.0.22621.1" processorArchitecture="amd64" language="en-GB" buildType="re

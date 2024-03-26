@@ -1,0 +1,21 @@
+ <assemblyIdentity name="Microsoft-Windows-UpdateTargeting-ClientOS-SV2Beta-EKB-Wrapper-Package" version="10.0.22621.2506" processorArchitecture="amd64" language="pt-BR" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="76950095d3f2569af5f25f75a0ac2db9">
+      <mum2:customInformation xmlns:mum2="urn:schemas-microsoft-com:asm.v3">
+        <mum2:noAutoMerge />
+      </mum2:customInformation>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-UpdateTargeting-ClientOS-SV2Moment1-EKB-Wrapper-Package" version="10.0.22621.2506" processorArchitecture="amd64" language="pt-BR" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="9a2d70d8849b7a130867e5022a3476c0">
+      <mum2:customInformation xmlns:mum2="urn:schemas-microsoft-com:asm.v3">
+        <mum2:noAutoMerge />
+      </mum2:customInformation>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-UpdateTargeting-ClientOS-SV2Moment2-EKB-Wrapper-Package" version="10.0.22621.2506" processorArchitecture="amd64" language="pt-BR" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="ac6bb29ea6a78f2649c6f2b073fbc314">
+      <mum2:customInformation xmlns:mum2="urn:schemas-microsoft

@@ -1,0 +1,22 @@
+f (availableSpaceLeft < popupElementBounds.width &&
+                    availableSpaceRight < popupElementBounds.width) {
+                    // Not enough space left or right of root element
+                    var actualPopupWidth = Math.min(popupElementBounds.width, window.innerWidth);
+                    this._popupElement.style.maxWidth = actualPopupWidth + "px";
+                    if (actualPopupWidth < popupElementBounds.width) {
+                        left = Utils.getScrollX();
+                    }
+                    else {
+                        left =
+                            Utils.getScrollX() +
+                                rootElementBounds.left +
+                                (rootElementBounds.width - actualPopupWidth) / 2;
+                    }
+                }
+                else {
+                    // Enough space on the left or right of the root element
+                    if (availableSpaceRight >= popupElementBounds.width) {
+                        left = Utils.getScrollX() + rootElementBounds.right;
+                        (_b = this._popupElement.classList).add.apply(_b, this.hostConfig.makeCssClassNames("ac-ctrl-slide", "ac-ctrl-slideLeftToRight"));
+                    }
+  

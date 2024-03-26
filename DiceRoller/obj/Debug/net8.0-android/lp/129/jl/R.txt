@@ -1,0 +1,46 @@
+_b[HighContrastSelector] = __assign({ color: 'WindowText' }, getHighContrastNoAdjustStyle()),
+                    _b[MediumScreenSelector] = {
+                        fontSize: chevronSmallFontSize,
+                    },
+                    _b[MinimumScreenSelector] = {
+                        fontSize: chevronSmallFontSize,
+                    },
+                    _b),
+            },
+        ],
+        overflow: [
+            classNames.overflow,
+            {
+                position: 'relative',
+                display: 'flex',
+                alignItems: 'center',
+            },
+        ],
+        overflowButton: [
+            classNames.overflowButton,
+            getFocusStyle(theme),
+            SingleLineTextStyle,
+            {
+                fontSize: overflowButtonFontSize,
+                color: overflowButtonColor,
+                height: '100%',
+                cursor: 'pointer',
+                selectors: __assign(__assign({}, itemStateSelectors), (_c = {}, _c[MinimumScreenSelector] = {
+                    padding: '4px 6px',
+                }, _c[MediumScreenSelector] = {
+                    fontSize: fonts.mediumPlus.fontSize,
+                }, _c)),
+            },
+        ],
+        itemLink: [
+            classNames.itemLink,
+            getFocusStyle(theme),
+            SingleLineTextStyle,
+            __assign(__assign({}, commonItemStyles), { selectors: __assign((_d = { ':focus': {
+                            color: palette.neutralDark,
+                        } }, _d["." + IsFocusVisibleClassName + " &:focus"] = {
+                    outline: "none",
+                }, _d), itemStateSelectors) }),
+        ],
+        item: [
+ 

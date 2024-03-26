@@ -1,0 +1,12 @@
+ar fillPercentage = getFillingPercentage(starNum, displayRating);
+        var onSelectStar = function (ev) {
+            // Use the actual rating (not display value) here, to ensure that we update if the actual
+            // rating is undefined and the user clicks the first star.
+            if (rating === undefined || Math.ceil(rating) !== starNum) {
+                setRating(starNum, ev);
+            }
+        };
+        stars.push(React.createElement("button", tslib_1.__assign({ className: Utilities_1.css(classNames.ratingButton, size === Rating_types_1.RatingSize.Large ? classNames.ratingStarIsLarge : classNames.ratingStarIsSmall), id: getStarId(id, starNum), key: starNum }, (starNum === Math.ceil(displayRating) && { 'data-is-current': true }), { onFocus: onSelectStar, onClick: onSelectStar, disabled: !!(disabled || readOnly), role: "radio", "aria-hidden": readOnly ? 'true' : undefined, type: "button", "aria-checked": starNum === Math.ceil(displayRating) }),
+            React.createElement("span", { id: labelId + "-" + starNum, className: classNames.labelText }, Utilities_1.format(ariaLabelFormat || '', starNum, max)),
+            renderStar({
+                fillPercentage: fillPer
